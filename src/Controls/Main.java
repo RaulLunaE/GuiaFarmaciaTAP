@@ -4,6 +4,9 @@
  */
 package Controls;
 
+import Views.Pedidos;
+import Views.Visualizacion;
+
 /**
  *
  * @author Raul
@@ -14,6 +17,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pedidos inicio = new Pedidos();
+        Visualizacion vista = new Visualizacion();
+        inicio.setVisible(true);
+        vista.setVisible(false);
     }
 }

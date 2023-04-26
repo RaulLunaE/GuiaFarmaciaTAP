@@ -4,6 +4,17 @@
  */
 package Views;
 
+import javax.accessibility.AccessibleContext;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JRootPane;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Raul
@@ -17,10 +28,189 @@ public class Pedidos extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnAceptar() {
+        return btnAceptar;
+    }
+
+    public void setBtnAceptar(JButton btnAceptar) {
+        this.btnAceptar = btnAceptar;
+    }
+
+    public ButtonGroup getBtnagrupador() {
+        return btnagrupador;
+    }
+
+    public void setBtnagrupador(ButtonGroup btnagrupador) {
+        this.btnagrupador = btnagrupador;
+    }
+
+    public ButtonGroup getBtngagrupadob() {
+        return btngagrupadob;
+    }
+
+    public void setBtngagrupadob(ButtonGroup btngagrupadob) {
+        this.btngagrupadob = btngagrupadob;
+    }
+
+    public JComboBox<String> getCbxtipomedi() {
+        return cbxtipomedi;
+    }
+
+    public void setCbxtipomedi(JComboBox<String> cbxtipomedi) {
+        this.cbxtipomedi = cbxtipomedi;
+    }
+
+    public JCheckBox getjCheckBox1() {
+        return jCheckBox1;
+    }
+
+    public void setjCheckBox1(JCheckBox jCheckBox1) {
+        this.jCheckBox1 = jCheckBox1;
+    }
+
+    public JCheckBox getjCheckBox2() {
+        return jCheckBox2;
+    }
+
+    public void setjCheckBox2(JCheckBox jCheckBox2) {
+        this.jCheckBox2 = jCheckBox2;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public void setjLabel2(JLabel jLabel2) {
+        this.jLabel2 = jLabel2;
+    }
+
+    public JLabel getjLabel3() {
+        return jLabel3;
+    }
+
+    public void setjLabel3(JLabel jLabel3) {
+        this.jLabel3 = jLabel3;
+    }
+
+    public JLabel getjLabel4() {
+        return jLabel4;
+    }
+
+    public void setjLabel4(JLabel jLabel4) {
+        this.jLabel4 = jLabel4;
+    }
+
+    public JLabel getjLabel5() {
+        return jLabel5;
+    }
+
+    public void setjLabel5(JLabel jLabel5) {
+        this.jLabel5 = jLabel5;
+    }
+
+    public JLabel getjLabel6() {
+        return jLabel6;
+    }
+
+    public void setjLabel6(JLabel jLabel6) {
+        this.jLabel6 = jLabel6;
+    }
+
+    public JLabel getjLabel7() {
+        return jLabel7;
+    }
+
+    public void setjLabel7(JLabel jLabel7) {
+        this.jLabel7 = jLabel7;
+    }
+
+    public JLabel getjLabel8() {
+        return jLabel8;
+    }
+
+    public void setjLabel8(JLabel jLabel8) {
+        this.jLabel8 = jLabel8;
+    }
+
+    public JLabel getjLabel9() {
+        return jLabel9;
+    }
+
+    public void setjLabel9(JLabel jLabel9) {
+        this.jLabel9 = jLabel9;
+    }
+
+    public JPanel getjPanel1() {
+        return jPanel1;
+    }
+
+    public void setjPanel1(JPanel jPanel1) {
+        this.jPanel1 = jPanel1;
+    }
+
+    public JPanel getjPanel2() {
+        return jPanel2;
+    }
+
+    public void setjPanel2(JPanel jPanel2) {
+        this.jPanel2 = jPanel2;
+    }
+
+    public JRadioButton getjRadioButton1() {
+        return jRadioButton1;
+    }
+
+    public void setjRadioButton1(JRadioButton jRadioButton1) {
+        this.jRadioButton1 = jRadioButton1;
+    }
+
+    public JRadioButton getjRadioButton2() {
+        return jRadioButton2;
+    }
+
+    public void setjRadioButton2(JRadioButton jRadioButton2) {
+        this.jRadioButton2 = jRadioButton2;
+    }
+
+    public JRadioButton getjRadioButton3() {
+        return jRadioButton3;
+    }
+
+    public void setjRadioButton3(JRadioButton jRadioButton3) {
+        this.jRadioButton3 = jRadioButton3;
+    }
+
+    public JTextField getTxtNomMedi() {
+        return txtNomMedi;
+    }
+
+    public void setTxtNomMedi(JTextField txtNomMedi) {
+        this.txtNomMedi = txtNomMedi;
+    }
+
+    public JTextField getTxtcantidad() {
+        return txtcantidad;
+    }
+
+    public void setTxtcantidad(JTextField txtcantidad) {
+        this.txtcantidad = txtcantidad;
+    }
+
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnagrupador = new javax.swing.ButtonGroup();
+        btngagrupadob = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -49,26 +239,41 @@ public class Pedidos extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre del medicamento:");
 
+        txtNomMedi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         jLabel3.setText("Tipo de medicamento:");
 
         cbxtipomedi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "analgesico", "analeptico", "anestesico", "antiacido", "antidepresivo", "antibioticos" }));
         cbxtipomedi.setToolTipText("");
+        cbxtipomedi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel4.setText("Cantidad:");
 
+        txtcantidad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         jLabel5.setText("Seleccione el distribuidor:");
 
+        btnagrupador.add(jRadioButton1);
         jRadioButton1.setText("COFARMA");
+        jRadioButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        btnagrupador.add(jRadioButton2);
         jRadioButton2.setText("EMPSEPHAR ");
+        jRadioButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        btnagrupador.add(jRadioButton3);
         jRadioButton3.setText("CEMEFAR");
+        jRadioButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel6.setText("Tipo de sucursal:");
 
+        btngagrupadob.add(jCheckBox1);
         jCheckBox1.setText("Principal");
+        jCheckBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        btngagrupadob.add(jCheckBox2);
         jCheckBox2.setText("Secundaria");
+        jCheckBox2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -205,6 +410,8 @@ public class Pedidos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAceptar;
+    private javax.swing.ButtonGroup btnagrupador;
+    private javax.swing.ButtonGroup btngagrupadob;
     private javax.swing.JComboBox<String> cbxtipomedi;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
