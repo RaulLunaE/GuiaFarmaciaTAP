@@ -4,6 +4,8 @@
  */
 package Models;
 
+import Views.Visualizacion;
+
 /**
  *
  * @author Raul
@@ -20,6 +22,10 @@ public class Distribuidora {
     public Distribuidora(String Nombre, String Tipo) {
         this.Nombre = Nombre;
         this.Tipo = Tipo;
+    }
+
+    public Distribuidora(Visualizacion ped) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getNombre() {

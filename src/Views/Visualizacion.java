@@ -20,20 +20,20 @@ public class Visualizacion extends javax.swing.JFrame {
         initComponents();
     }
 
-    public JButton getjButton1() {
-        return jButton1;
+    public JButton getBtnCancelar() {
+        return btnCancelar;
     }
 
-    public void setjButton1(JButton jButton1) {
-        this.jButton1 = jButton1;
+    public void setBtnCancelar(JButton btnCancelar) {
+        this.btnCancelar = btnCancelar;
     }
 
-    public JButton getjButton2() {
-        return jButton2;
+    public JButton getBtnEnviar() {
+        return btnEnviar;
     }
 
-    public void setjButton2(JButton jButton2) {
-        this.jButton2 = jButton2;
+    public void setBtnEnviar(JButton btnEnviar) {
+        this.btnEnviar = btnEnviar;
     }
 
     public JLabel getjLabel1() {
@@ -132,6 +132,8 @@ public class Visualizacion extends javax.swing.JFrame {
         this.jLabel9 = jLabel9;
     }
 
+   
+
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -149,8 +151,8 @@ public class Visualizacion extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnEnviar = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
 
@@ -180,9 +182,9 @@ public class Visualizacion extends javax.swing.JFrame {
 
         jLabel12.setText("la dirección es Calle de la Rosa n. 28 para la secundaria es Calle Alcazabilla n. 3");
 
-        jButton1.setText("Enviar");
+        btnEnviar.setText("Enviar");
 
-        jButton2.setText("Cancelar");
+        btnCancelar.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -220,9 +222,9 @@ public class Visualizacion extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(btnEnviar)
                                 .addGap(125, 125, 125)
-                                .addComponent(jButton2))
+                                .addComponent(btnCancelar))
                             .addComponent(jLabel12))))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -252,8 +254,8 @@ public class Visualizacion extends javax.swing.JFrame {
                     .addComponent(jLabel12))
                 .addGap(94, 94, 94)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnEnviar)
+                    .addComponent(btnCancelar))
                 .addContainerGap(97, Short.MAX_VALUE))
         );
 
@@ -261,8 +263,8 @@ public class Visualizacion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnEnviar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -16,10 +16,11 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Pedidos inicio = new Pedidos();
-        Visualizacion vista = new Visualizacion();
-        inicio.setVisible(true);
-        vista.setVisible(false);
+        controlMedicamento cont = new controlMedicamento(inicio);
+
     }
+    
+    
 }

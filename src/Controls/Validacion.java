@@ -62,17 +62,13 @@ public class Validacion {
 
 
     public int valiNombreV2(String cadena2){
-        
-        
         if (cadena2.matches("[A-Za-zÑñáéíúóÁÉÍÓÚ]{1,50}")) {
             if (cadena2.length()<= 2  || cadena2.length()>15) {
                 //logitud corta
                 return 1;
             }else{
-                
                 //correcto
                 return 0;
-                
             }
         }else{
             
@@ -85,23 +81,17 @@ public class Validacion {
     
     //validar nombre separado
     public int valiNombreSepV2(String cadena2){
-        
-        
         if (cadena2.matches("[A-Za-zÑñáéíúóÁÉÍÓÚ]{1,25}[\\s]{0,1}[A-Za-zÑñáéíúóÁÉÍÓÚ]{0,25}")) {
             if (cadena2.length()<= 2  || cadena2.length()>20) {
                 //logitud corta
                 return 1;
-            }else{
-                
+            }else{   
                 //correcto
                 return 0;
-                
             }
         }else{
-            
             //error formato
-            return 2;
-            
+            return 2; 
         }
         
     }

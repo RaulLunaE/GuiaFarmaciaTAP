@@ -14,24 +14,25 @@ import javafx.event.ActionEvent;
  *
  * @author Raul
  */
-public class controlMedicamento {
-    
+public class controlMedicamento extends javax.swing.JFrame{
+  
     Pedidos pedi = new Pedidos();
     Medicamento medi = new Medicamento();
-    Visualizacion vista = new Visualizacion();
-    Distribuidora dist = new Distribuidora();
 
-    public controlMedicamento(Medicamento medi, Pedidos pedi) {
+    public controlMedicamento(Pedidos pedi) {
         this.pedi = pedi;
-        this.medi = medi;
+        this.pedi.setLocationRelativeTo(null);
+        this.pedi.setVisible(true);
+        iniciaControl();
     }
-    
-    public void cambiarventana(){
+   
+    public void  iniciaControl(){
         pedi.getBtnAceptar().addActionListener(l -> cambiarPanel());
     }
     
-    private void cambiarPanel() {
-      vista.setVisible(true);
+    public void cambiarPanel() {
+      Visualizacion vis = new Visualizacion();
+      this.pedi.setVisible(false);
+      controlDistribuidora cont = new controlDistribuidora(vis);
     }
-    
 }
