@@ -52,20 +52,12 @@ public class Visualizacion extends javax.swing.JFrame {
         this.lbldistribuidor = jLabel11;
     }
 
-    public JLabel getjLabel12() {
-        return jLabel12;
-    }
-
-    public void setjLabel12(JLabel jLabel12) {
-        this.jLabel12 = jLabel12;
-    }
-
     public JLabel getjLabel2() {
-        return jLabel2;
+        return lbldistribuidor2;
     }
 
     public void setjLabel2(JLabel jLabel2) {
-        this.jLabel2 = jLabel2;
+        this.lbldistribuidor2 = jLabel2;
     }
 
     public JLabel getjLabel3() {
@@ -148,15 +140,20 @@ public class Visualizacion extends javax.swing.JFrame {
         this.lbldistribuidor = lbldistribuidor;
     }
 
-    
+    public JLabel getLbldistribuidor2() {
+        return lbldistribuidor2;
+    }
 
+    public void setLbldistribuidor2(JLabel lbldistribuidor2) {
+        this.lbldistribuidor2 = lbldistribuidor2;
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lbldistribuidor2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lbltipo = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -166,7 +163,6 @@ public class Visualizacion extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         lbldireccion = new javax.swing.JLabel();
         lbldistribuidor = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         btnEnviar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         lblnombre = new javax.swing.JLabel();
@@ -176,8 +172,8 @@ public class Visualizacion extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dubai Medium", 3, 24)); // NOI18N
         jLabel1.setText("Pedido al Distribuidor");
 
-        jLabel2.setFont(new java.awt.Font("Dubai Medium", 3, 24)); // NOI18N
-        jLabel2.setText("jLabel2");
+        lbldistribuidor2.setFont(new java.awt.Font("Dubai Medium", 3, 24)); // NOI18N
+        lbldistribuidor2.setText("jLabel2");
 
         jLabel3.setText("El pedido realizado sobre el medicamento");
 
@@ -197,8 +193,6 @@ public class Visualizacion extends javax.swing.JFrame {
 
         lbldistribuidor.setText("jLabel11");
 
-        jLabel12.setText("la dirección es Calle de la Rosa n. 28 para la secundaria es Calle Alcazabilla n. 3");
-
         btnEnviar.setText("Enviar");
 
         btnCancelar.setText("Cancelar");
@@ -215,7 +209,7 @@ public class Visualizacion extends javax.swing.JFrame {
                         .addGap(104, 104, 104)
                         .addComponent(jLabel1)
                         .addGap(37, 37, 37)
-                        .addComponent(jLabel2))
+                        .addComponent(lbldistribuidor2))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -238,16 +232,13 @@ public class Visualizacion extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lbldistribuidor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnEnviar)
-                                .addGap(125, 125, 125)
-                                .addComponent(btnCancelar))
-                            .addComponent(jLabel12)))
+                        .addComponent(btnEnviar)
+                        .addGap(125, 125, 125)
+                        .addComponent(btnCancelar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(271, 271, 271)
                         .addComponent(jLabel7)))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -255,7 +246,7 @@ public class Visualizacion extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lbldistribuidor2))
                 .addGap(52, 52, 52)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -272,8 +263,7 @@ public class Visualizacion extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(lbldistribuidor)
-                    .addComponent(jLabel12))
+                    .addComponent(lbldistribuidor))
                 .addGap(94, 94, 94)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEnviar)
@@ -288,8 +278,6 @@ public class Visualizacion extends javax.swing.JFrame {
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEnviar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
@@ -298,6 +286,7 @@ public class Visualizacion extends javax.swing.JFrame {
     private javax.swing.JLabel lblcantidad;
     private javax.swing.JLabel lbldireccion;
     private javax.swing.JLabel lbldistribuidor;
+    private javax.swing.JLabel lbldistribuidor2;
     private javax.swing.JLabel lblnombre;
     private javax.swing.JLabel lbltipo;
     // End of variables declaration//GEN-END:variables

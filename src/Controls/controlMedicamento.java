@@ -29,6 +29,10 @@ public class controlMedicamento extends javax.swing.JFrame{
         this.view.setVisible(true);
         iniciar_control();
     }
+
+    controlMedicamento(Pedidos ped) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     public void iniciar_control(){
         view.getBtnAceptar().addActionListener(l->aceptar());
@@ -36,13 +40,13 @@ public class controlMedicamento extends javax.swing.JFrame{
     
     public void validacion(){
         if (view.getTxtNomMedi().getText().isEmpty()==true || view.getTxtcantidad().getText().isEmpty()==true || view.getjRadioButton1().isSelected()==false && view.getjRadioButton2().isSelected()==false && view.getjRadioButton3().isSelected()==false) {
-            JOptionPane.showMessageDialog(view, "COMPLETE EL FORMULARIO PORFAVOR");
+            JOptionPane.showMessageDialog(view, "Aun estan vacios unos campos");
         }
     }
     
     public void aceptar(){
         if (view.getTxtNomMedi().getText().isEmpty()==true||view.getTxtcantidad().getText().isEmpty()==true||view.getjRadioButton1().isSelected()==false&&view.getjRadioButton2().isSelected()==false&&view.getjRadioButton3().isSelected()==false) {
-            JOptionPane.showMessageDialog(view, "COMPLETE EL FORMULARIO PORFAVOR");
+            JOptionPane.showMessageDialog(view, "Aun estan vacios unos campos");
         }else{
             String nombre=view.getTxtNomMedi().getText();
             String tipo=view.getCbxtipomedi().getSelectedItem().toString();
@@ -62,6 +66,7 @@ public class controlMedicamento extends javax.swing.JFrame{
             
     String sucursal="";
         if (view.getjCheckBox1().isSelected()==true&&view.getjCheckBox2().isSelected()==true) {
+            /*Esta funcion esta habilitada si a los checkbox se les debe quitar el grouo boton y pueda selecionar las dos*/
             sucursal="PRINCIPAL Y SECUNDARIA";
         }else{
         if (view.getjCheckBox1().isSelected()==true) {
@@ -167,50 +172,6 @@ public class controlMedicamento extends javax.swing.JFrame{
         vista.jLabel6.setText(medi.getCantidad());
         vista.jLabel11.setText(medi.getSucursal());
     }*/
-    
-    /*
-    
-    
-    
-    [22:36, 26/4/2023] Eddy Belduma: 
-    private static ArrayList<Medicamento> list_medic = new ArrayList<Medicamento>();
-[22:37, 26/4/2023] Eddy Belduma: 
-    public void registrarMedicamento(String nombre, String tipo, int cantidad, String distribuidor, String sucursal){
-        list_medic.add(new Medicamento(nombre, tipo, cantidad, distribuidor, sucursal));
-    }
-    
-[22:40, 26/4/2023] Eddy Belduma: 
-    ResumenPedido vistaRS;
-    Model_Medicamento md_medicamento;
-    
-    
-    
-[22:40, 26/4/2023] Eddy Belduma: 
-    public Control_ResumenPedido(ResumenPedido vista, Model_Medicamento md_medicamento) {
-        this.md_medicamento = md_medicamento;
-        this.vistaRS = vista;
-        this.vistaRS.setLocationRelativeTo(null);
-        this.vistaRS.setVisible(true);
-        iniciaControl();
-    }
-    
-        
-[22:39, 26/4/2023] Eddy Belduma: 
-    public void iniciaControl(){
-        System.out.println(md_medicamento.getList_medic().toString());
-        vistaRS.getJlMedicamento().setText(md_medicamento.getList_medic().get(0).getMd_nombre().toString());
-        vistaRS.getjLabelCantidad().setText(String.valueOf(md_medicamento.getList_medic().get(0).getMd_cantidad()).toString());
-        vistaRS.getJlsucursa().setText(md_medicamento.getList_medic().get(0).getMd_sucursal().toString());
-        vistaRS.getJltipomedi().setText(md_medicamento.getList_medic().get(0).getMd_tipo().toString());
-        vistaRS.setTitle(md_medicamento.getList_medic().get(0).getMd_distribuidor().toString());
-}
-    
-    
-    
-    controlador principal
-[22:41, 26/4/2023] Eddy Belduma: ResumenPedido ped = new ResumenPedido();
-        Control_ResumenPedido cont = new Control_ResumenPedido(ped, Md_medicamento);
-[22:42, 26/4/2023] Eddy Belduma: Model_Medicamento Md_medicamento = new Model_Medicamento();*/
 }
     
    

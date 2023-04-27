@@ -40,11 +40,12 @@ public class controlDistribuidora extends javax.swing.JFrame{
         view.getLblcantidad().setText(cantidadx);
         view.getLbltipo().setText(listax.get(0).getTipo());
         view.getLbldistribuidor().setText(listax.get(0).getDistribuidor());
+        view.getLbldistribuidor2().setText(listax.get(0).getDistribuidor());
         String sucursal_seleccionada=listax.get(0).getTiposucursal();
         String direccion="";
                     
     if (sucursal_seleccionada=="PRINCIPAL Y SECUNDARIA") {
-        direccion="Para la  farmacia situada en Calle de la Rosa n.28 y para la situada en Calle Alcazabilla n.3";
+            direccion="Para la  farmacia situada en Calle de la Rosa n.28 y para la situada en Calle Alcazabilla n.3";
         }if (sucursal_seleccionada=="PRINCIPAL") {
             direccion="Para la  farmacia situada en Calle de la Rosa n.28";
         }if (sucursal_seleccionada=="SECUNDARIA"){
@@ -57,7 +58,6 @@ public class controlDistribuidora extends javax.swing.JFrame{
         JOptionPane.showMessageDialog(view, "Pedido Enviado");
         Pedidos ped = new Pedidos();
         this.view.setVisible(false);
-        this.view.dispose();
         pedi.setVisible(true);
     }
 
@@ -65,7 +65,6 @@ public class controlDistribuidora extends javax.swing.JFrame{
         JOptionPane.showMessageDialog(view, "Pedido Cancelado");
         Pedidos ped = new Pedidos();
         this.view.setVisible(false);
-        this.view.dispose();
         pedi.setVisible(true);
     }
 
