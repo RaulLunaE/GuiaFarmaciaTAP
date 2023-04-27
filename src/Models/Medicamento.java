@@ -10,44 +10,60 @@ package Models;
  */
 public class Medicamento {
     
-    private String Nombre;
-    private String Tipo;
-    private String cantidad;
+    private String nombre;
+    private String tipo;
+    private int cantidad;
+    private String distribuidor;
+    private String tiposucursal;
 
     public Medicamento() {
     }
 
-    
-    public Medicamento(String Nombre, String Tipo, String cantidad) {
-        this.Nombre = Nombre;
-        this.Tipo = Tipo;
+    public Medicamento(String nombre, String tipo, int cantidad, String distribuidor, String sucursal) {
+        this.nombre = nombre;
+        this.tipo = tipo;
         this.cantidad = cantidad;
-    }
-    
-    public String getNombre() {
-        return Nombre;
+        this.distribuidor = distribuidor;
+        this.tiposucursal = sucursal;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getTipo() {
-        return Tipo;
+        return tipo;
     }
 
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(String cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    
-    
-    
+
+    public String getDistribuidor() {
+        return distribuidor;
+    }
+
+    public void setDistribuidor(String distribuidor) {
+        this.distribuidor = distribuidor;
+    }
+
+    public String getTiposucursal() {
+        return tiposucursal;
+    }
+
+    public void setTiposucursal(String tiposucursal) {
+        this.tiposucursal = tiposucursal;
+    }
 }

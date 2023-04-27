@@ -12,23 +12,22 @@ import Views.Visualizacion;
  */
 public class Distribuidora {
     
-    private String Nombre;
-    private String Tipo;
+    
 
     public Distribuidora() {
     }
 
     
-    public Distribuidora(String Nombre, String Tipo) {
+    /*public Distribuidora(String Nombre, String Tipo) {
         this.Nombre = Nombre;
         this.Tipo = Tipo;
-    }
+    }*/
 
     public Distribuidora(Visualizacion ped) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    public String getNombre() {
+    /*public String getNombre() {
         return Nombre;
     }
 
@@ -42,7 +41,7 @@ public class Distribuidora {
 
     public void setTipo(String Tipo) {
         this.Tipo = Tipo;
-    }
+    }*/
     
     
 }
